@@ -4,7 +4,7 @@ import './cursor.css';
 
 export default function Cursor({ stickyElement }) {
 
-    const cursorSize = 15;
+    const cursorSize = 64;
     const mouse = {
         x: useMotionValue(0),
         y: useMotionValue(0)
@@ -12,7 +12,7 @@ export default function Cursor({ stickyElement }) {
 
 
 
-    const smoothOptions = { damping: 20, stiffness: 300, mass: 0.5 }
+    const smoothOptions = { damping: 40, stiffness: 500, mass: 0.5 }
     const smoothMouse = {
         x: useSpring(mouse.x, smoothOptions),
         y: useSpring(mouse.y, smoothOptions)
