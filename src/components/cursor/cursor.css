@@ -1,0 +1,20 @@
+.cursor {
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* mix-blend-mode: difference; */
+    z-index: 99;
+    pointer-events: none;
+    transition: width 0.3s, height 0.3s;
+    border: solid 1px #000;
+}
+
+/* .cursor.hovered {
+    background-color: rgba(255, 0, 0, 0.9);
+    width: 48px;
+    height: 48px;
+} */
