@@ -93,7 +93,7 @@
 .skillsSpan {
     display: flex;
     font-family: 'Switzer';
-    opacity: .07;
+    opacity: .1;
     top: 10px;
     left: 20px;
     font-size: 5vw;

@@ -12,9 +12,3 @@
     transition: width 0.3s, height 0.3s;
     border: solid 1px #000;
 }
-
-/* .cursor.hovered {
-    background-color: rgba(255, 0, 0, 0.9);
-    width: 48px;
-    height: 48px;
-} */

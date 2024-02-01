@@ -19,7 +19,7 @@ function App() {
       <Hero isSwitchChecked={isSwitchChecked} onSwitchChange={handleSwitchChange} />
       <Works isSwitchChecked={isSwitchChecked} onSwitchChange={handleSwitchChange} />
       <Footer isSwitchChecked={isSwitchChecked} onSwitchChange={handleSwitchChange} />
-      <Cursor />
+      {/* <Cursor /> */}
     </div>
   );
 }

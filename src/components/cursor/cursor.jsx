@@ -1,46 +1,41 @@
 import React, { useEffect, useState } from 'react';
-import { motion, useMotionValue, useSpring } from 'framer-motion';
+import { motion } from 'framer-motion';
 import './cursor.css';
 
-export default function Cursor({ stickyElement }) {
-
-    const cursorSize = 64;
-    const mouse = {
-        x: useMotionValue(0),
-        y: useMotionValue(0)
-    }
-
-
-
-    const smoothOptions = { damping: 40, stiffness: 500, mass: 0.5 }
-    const smoothMouse = {
-        x: useSpring(mouse.x, smoothOptions),
-        y: useSpring(mouse.y, smoothOptions)
-    }
-
-
-
-    const manageMouseMove = e => {
-        const { clientX, clientY } = e;
-        mouse.x.set(clientX - cursorSize / 2);
-        mouse.y.set(clientY - cursorSize / 2);
-    }
-
-
+export default function Cursor() {
+    const [mousePosition, setMousePosition] = useState({
+        x: 0,
+        y: 0
+    })
+    console.log(mousePosition);
 
     useEffect(() => {
-        window.addEventListener("mousemove", manageMouseMove);
-        return () => {
-            window.removeEventListener("mousemove", manageMouseMove)
+        const mouseMove = e => {
+            setMousePosition({
+                x: e.clientX,
+                y: e.clientY
+            })
         }
-    }, [])
+
+        window.addEventListener('mousemove', mouseMove);
+
+        return () => {
+            window.removeEventListener('mousemove', mouseMove);
+        }
+    }, []);
+
+    const variants = {
+        default: {
+            x: mousePosition.x - 32,
+            y: mousePosition.y - 32
+        }
+    }
 
     return (
-        <div>
-            <motion.div className='cursor'
-                style={{ left: smoothMouse.x, top: smoothMouse.y }}
-                animate={{ width: cursorSize, height: cursorSize }}>
-            </motion.div>
-        </div>
+        <motion.div
+            className='cursor'
+            variants={variants}
+            animate="default"
+        />
     )
 }
