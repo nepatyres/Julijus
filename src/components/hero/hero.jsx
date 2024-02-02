@@ -1,5 +1,5 @@
 import React from 'react';
-import videoFile from '/assets/videos/hero2.mp4';
+import videoFile from '../../assets/videos/hero2.mp4';
 import './hero.css';
 
 export default function Hero({ isSwitchChecked }) {
