@@ -9,7 +9,7 @@
 }
 
 .worksPhotoOne {
-    background-image: url('../../../assets/images/workOne.png');
+    background-image: url('/assets/workOne.png');
     width: 100%;
     height: 100%;
     background-size: cover;
