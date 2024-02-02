@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: 'Switzer';
-  src: url('/Julijus/assets/fonts/Jost-Regular-DQ8BVLVX.ttf') format('truetype');
+  src: url('assets/fonts/Jost-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -35,7 +35,7 @@
 
 @font-face {
   font-family: 'Jost-Regular';
-  src: url('/assets/fonts/Jost-Regular-DQ8BVLVX.ttf') format('truetype');
+  src: url('/assets/fonts/Jost-Regular.ttf') format('truetype');
 }
 
 @font-face {
