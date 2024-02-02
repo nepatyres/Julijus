@@ -1,6 +1,11 @@
 @font-face {
+  font-family: 'Jost-Regular';
+  src: url('assets/fonts/Jost/Jost-Regular.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Jost-Light';
-  src: url('assets/fonts/Jost-ExtraLight.ttf') format('truetype');
+  src: url('assets/fonts/Jost/Jost-ExtraLight.ttf') format('truetype');
 }
 
 @font-face {
@@ -31,11 +36,6 @@
 @font-face {
   font-family: 'Lato-R';
   src: url('assets/fonts/Lato/Lato-Light.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Jost-Regular';
-  src: url('/assets/fonts/Jost-Regular.ttf') format('truetype');
 }
 
 @font-face {
