@@ -3,7 +3,7 @@ import Navbar from './components/navbar/navbar';
 import Hero from './components/hero/hero';
 import Works from './components/works/works';
 import Footer from './components/skills/skills';
-import Cursor from './components/cursor/cursor';
+// import Cursor from './components/cursor/cursor';
 import './App.css';
 
 function App() {
