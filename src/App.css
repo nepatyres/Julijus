@@ -50,6 +50,7 @@
 html {
   scroll-behavior: auto;
   scrollbar-width: thin;
+  font-family: sans-serif;
 }
 
 body {
@@ -57,7 +58,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background: white;
   border-radius: 10px;
 }
 
@@ -66,10 +67,13 @@ body {
   background-color: #121212;
 }
 
+:root {
+  --scrollbar-color: #333 #121212;
+}
+
 * {
-  scrollbar-color: #333 #121212;
+  scrollbar-color: var(--scrollbar-color);
   box-sizing: border-box;
-  /* cursor: none; */
 }
 
 .white {

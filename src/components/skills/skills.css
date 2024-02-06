@@ -6,11 +6,11 @@
     z-index: 10;
     mix-blend-mode: difference;
     flex-direction: column;
+    justify-content: space-between;
     background-color: #181718;
 }
 
 .footer {
-    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -129,12 +129,12 @@
     align-items: start;
     width: 100%;
     padding: 0;
+    list-style: none;
 }
 
 .skillsLi {
     width: 100%;
     text-align: start;
-    list-style: none;
     font-family: 'Switzer';
     font-weight: 900;
     text-transform: uppercase;
@@ -173,6 +173,7 @@
         font-size: 3vw;
     }
 }
+
 
 .skillsLiOne {
     border-top: 1.7px solid rgba(255, 255, 255, .2);

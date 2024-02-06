@@ -13,6 +13,11 @@ function App() {
     setIsSwitchChecked((prev) => !prev);
   };
 
+  document.documentElement.style.setProperty(
+    '--scrollbar-color',
+    isSwitchChecked ? '#cccccc #f1f1f1' : '#333 #121212'
+  );
+
   return (
     <div className='appContainer'>
       <Navbar isSwitchChecked={isSwitchChecked} onSwitchChange={handleSwitchChange} />
