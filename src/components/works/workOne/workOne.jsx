@@ -32,7 +32,7 @@ export default function WorkOne({ isSwitchChecked }) {
                     opacity: 1,
                     height: `${Math.min(55, scrollPercentage)}%`,
                 }} >
-                <a className="worksPhotoOne" href='https://geoquiz-ila7.onrender.com/' target="_blank"></a>
+                <div className="worksPhotoOne"></div>
             </div>
             <div className="worksContent">
                 <div>
