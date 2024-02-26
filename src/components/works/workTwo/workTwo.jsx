@@ -51,8 +51,11 @@ export default function workOne({ isSwitchChecked }) {
                     </div>
                     <div className='worksSkills'>
                         <ul className='worksSkillsUl'>
-                            <li className='worksSkillsLiTwo'>Design</li>
-                            <li className='worksSkillsLiTwo'>Development</li>
+                            <li className='worksSkillsLi'>HTML</li>
+                            <li className='worksSkillsLi'>CSS</li>
+                            <li className='worksSkillsLi'>React</li>
+                            <li className='worksSkillsLi'>Nodejs</li>
+                            <li className='worksSkillsLi'>Git</li>
                             <li className={`worksSkillsLiTwo ${isSwitchChecked ? 'yearLight' : 'yearDark'}`}>2023</li>
                         </ul>
                     </div>

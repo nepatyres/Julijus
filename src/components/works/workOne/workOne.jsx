@@ -9,7 +9,7 @@ export default function WorkOne({ isSwitchChecked }) {
         const handleScroll = () => {
             const scrollY = window.scrollY;
             const viewportHeight = window.innerHeight;
-            const startScroll =  0.80 * viewportHeight;
+            const startScroll = 0.80 * viewportHeight;
             const scalingFactor = 1250;
             const maxScroll = document.documentElement.scrollHeight - viewportHeight;
             const percentage = ((scrollY - startScroll) / (maxScroll - startScroll)) * scalingFactor;
@@ -51,8 +51,12 @@ export default function WorkOne({ isSwitchChecked }) {
                     </div>
                     <div className='worksSkills'>
                         <ul className='worksSkillsUl'>
-                            <li className='worksSkillsLi'>Design</li>
-                            <li className='worksSkillsLi'>Development</li>
+                            <li className='worksSkillsLi'>HTML</li>
+                            <li className='worksSkillsLi'>CSS</li>
+                            <li className='worksSkillsLi'>javascript</li>
+                            <li className='worksSkillsLi'>Nodejs</li>
+                            <li className='worksSkillsLi'>mongodb</li>
+                            <li className='worksSkillsLi'>Git</li>
                             <li className={`worksSkillsLi ${isSwitchChecked ? 'yearLight' : 'yearDark'}`}>2023</li>
                         </ul>
                     </div>
