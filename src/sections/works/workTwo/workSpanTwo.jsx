@@ -21,6 +21,6 @@ export default function WorkSpanTwo({ isSwitchChecked }) {
         };
     }, []);
     return (
-        <span className={`worksSpanTwo ${isVisible ? 'visible' : ''}`}>Carcarelt</span>
+        <span className={`font-antonio uppercase text-center flex text-white mix-blend-difference text-[22vw] lg:text-[23vw] xl:text-[21vw] xl:leading-[32vw] 2xl:text-[20vw] ${isVisible ? 'visible' : ''}`}>Carcarelt</span>
     )
 }

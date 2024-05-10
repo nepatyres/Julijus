@@ -1,9 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Navbar from './components/navbar/navbar';
-import Hero from './components/hero/hero';
-import Works from './components/works/works';
-import Footer from './components/skills/skills';
-// import Cursor from './components/cursor/cursor';
+import Navbar from './sections/navbar/navbar';
+import Hero from './sections/hero/hero';
+import Works from './sections/works/works';
+import Footer from './sections/skills/skills';
 import './App.css';
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
       <Hero isSwitchChecked={isSwitchChecked} onSwitchChange={handleSwitchChange} />
       <Works isSwitchChecked={isSwitchChecked} onSwitchChange={handleSwitchChange} />
       <Footer isSwitchChecked={isSwitchChecked} onSwitchChange={handleSwitchChange} />
-      {/* <Cursor /> */}
     </div>
   );
 }

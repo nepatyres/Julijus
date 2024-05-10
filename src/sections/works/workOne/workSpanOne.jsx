@@ -22,6 +22,6 @@ export default function WorkSpanOne({ isSwitchChecked }) {
     }, []);
 
     return (
-        <span className={`worksSpanOne ${isVisible ? 'visible' : ''}`}>GeoQuiz</span>
+        <span className={`font-antonio uppercase text-center flex text-white mix-blend-difference text-[30vw] lg:text-[27vw] xl:text-[25vw] 2xl:[22vw] ${isVisible ? 'visible' : ''}`}>GeoQuiz</span>
     );
 }
