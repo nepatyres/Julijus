@@ -1,4 +1,4 @@
-export const skills = ['css', 'html', 'nodejs', 'tailwind', 'javascript', 'typescript', 'mongodb', 'react', 'git']
+export const skills = ['css', 'html', 'nodejs', 'tailwind', 'javascript', 'typescript', 'mongodb', 'react', 'git'];
 
 export const works = [
     {
@@ -33,5 +33,5 @@ export const works = [
         ],
         skills: ['HTML', 'CSS', 'React', 'Nodejs', 'git', 2023]
     },
-]
+];
 

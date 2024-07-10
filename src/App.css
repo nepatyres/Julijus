@@ -60,6 +60,7 @@ html {
 body {
   margin: 0;
 }
+
 :root {
   --scrollbar-color: #333 #121212;
 }
@@ -122,34 +123,50 @@ body {
   }
 }
 
-.skillsLi {
-  border-bottom: 1.7px solid rgba(255, 255, 255, .2);
+.containera {
+  height: 100%;
+  display: flex;
+}
 
-  @media (width > 0px) {
-    font-size: 8vw;
-  }
+.body {
+  display: flex;
+  flex-direction: column;
+}
 
-  @media (width > 600px) {
-    font-size: 7vw;
-  }
+.textContainer {
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.4s;
+}
 
-  @media (width > 800px) {
-    font-size: 6vw;
-  }
+.textContainer p {
+  font-size: 4vw;
+  line-height: 4vw;
+  font-weight: 700;
+  margin: 0px;
+  color: white;
+  transition: all 0.4s,
+}
 
-  @media (width > 950px) {
-    font-size: 5vw;
-  }
+.textContainer .secondary {
+  position: absolute;
+  top: 0;
+  color: rgba(255, 255, 255, .5);
+  opacity: 0;
+  transform: rotateX(-90deg) translateY(1.8vw);
+  transform-origin: bottom center;
+}
 
-  @media (width > 1150px) {
-    font-size: 4vw;
-  }
+.textContainer:hover {
+  transform: rotateX(90deg);
+}
 
-  @media (width > 1450px) {
-    font-size: 3.5vw;
-  }
+.textContainer:hover .primary {
+  transform: translateY(-100%);
+  opacity: 0;
+}
 
-  @media (width > 1700px) {
-    font-size: 3vw;
-  }
+.textContainer:hover .secondary {
+  opacity: 1;
 }

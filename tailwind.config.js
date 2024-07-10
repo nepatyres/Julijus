@@ -15,7 +15,7 @@ export default {
         'antonio': ['"Antonio"'],
         'switzer': ['"Switzer"']
       },
-      colors:{
+      colors: {
         'dot6': 'rgba(255, 255, 255, .6)',
         'dot7': 'rgba(255, 255, 255, .7)',
         'dot8': 'rgba(255, 255, 255, .8)',
@@ -27,8 +27,8 @@ export default {
         'footBW': '#181718',
         'containerLight': '#fcfcfc',
         'containerDark': '#030303',
-        
-      }
+
+      },
     },
   },
   plugins: [],

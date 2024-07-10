@@ -12,22 +12,38 @@ export default function Works({ isSwitchChecked }) {
         gsap.registerPlugin(ScrollTrigger);
 
         refs.current.forEach((ref, i) => {
-            if (ref.image) {
-                const imageTimeline = gsap.timeline({
-                    scrollTrigger: {
-                        trigger: ref.image,
-                        start: 'top bottom',
-                        end: '+=500px',
-                        scrub: true,
-                        markers: true
-                    }
-                });
+            const imageWidth = ref.image.offsetWidth;
+            const top = { 250: '350', 300: '325', 350: '300', 400: '275', 450: '250', 500: '230' }
+            const imageTimeline = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ref.image,
+                    start: 'bottom bottom',
+                    end: `top-=${top[imageWidth] || ''} top`,
+                    scrub: 1,
+                    // markers: true
+                }
+            });
 
-                imageTimeline.fromTo(ref.image,
-                    { height: '0%' },
-                    { height: '50%' }
-                );
-            }
+            imageTimeline.fromTo(ref.image,
+                { clipPath: 'inset(0 0 100% 0)' },
+                { clipPath: 'inset(0 0 0% 0)' }
+            );
+
+            const nameTimeline = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ref.name,
+                    start: 'top-=700 center',
+                    end: '+=400px',
+                    scrub: 1,
+                    // markers: true
+                }
+            });
+
+            nameTimeline.fromTo(ref.name,
+                { y: '40vh' },
+                { y: '0vh' }
+            );
+
         });
 
         return () => {
@@ -44,12 +60,12 @@ export default function Works({ isSwitchChecked }) {
                             <span className='absolute left-5 top-2.5 text-[8rem] xl:text-[10rem] font-lato text-white/[.05] mix-blend-difference'>{work.number}</span>
                             <div className="flex flex-col z-10 h-full my-auto w-[90%] mx-auto inset-0 justify-center items-center absolute overflow-hidden mix-blend-difference">
 
-                                <span ref={el => refs.current[i].name = el} className={`flex absolute font-antonio  text-white/90 uppercase text-center text-[22vw] xl:text-[23vw] 2xl:[22vw]`}>{work.name}</span>
+                                <span ref={el => refs.current[i].name = el} className={`flex absolute font-antonio text-white/90 uppercase text-center text-[22vw] xl:text-[23vw] 2xl:[22vw]`}>{work.name}</span>
 
                                 <div></div>
                                 <div className='w-full flex mx-auto items-center pt-[22rem] md:pt-[25rem] lg:pt-[30rem] xl:pt-[30rem] 2xl:pt-[35rem] justify-between'>
                                     {work.links.map((link, i) => (
-                                        <a key={i += 1} href={link.link} target="_blank" className='rotate text-[1rem] md:text-[1.2rem] lg:text-[1.5rem]  text-white/90 font-switzerL mix-blend-difference no-underline items-center flex cursor-pointer'>{link.name}
+                                        <a key={i += 1} href={link.link} target="_blank" className='rotate text-[1rem] md:text-[1.2rem] lg:text-[1.5rem] text-white/90 font-switzerL mix-blend-difference no-underline items-center flex cursor-pointer'>{link.name}
                                             <Arrow />
                                         </a>
                                     ))}
@@ -64,7 +80,7 @@ export default function Works({ isSwitchChecked }) {
                                 </div>
 
                             </div>
-                            <div ref={el => refs.current[i].image = el} className='absolute z-20 justify-center text-center flex opacity-1  w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px] 2xl:w-[500px] 2xl:h-[500px]'>
+                            <div ref={el => refs.current[i].image = el} className='absolute z-20 justify-center text-center flex opacity-1 w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px] 2xl:w-[500px] 2xl:h-[500px]'>
                                 <img src={`${work.bg}`} className='bg-cover rounded-lg w-full h-full mix-blend-normal' alt="" />
                             </div>
                         </div>
