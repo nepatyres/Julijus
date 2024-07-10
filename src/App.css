@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Jost-Regular';
+  src: url('assets/fonts/Jost/Jost-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Jost-Light';
+  src: url('assets/fonts/Jost/Jost-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Antonio';
+  src: url('assets/fonts/Antonio-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-M';
+  src: url('assets/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('assets/fonts/Switzer/Switzer-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Switzer-L';
+  src: url('assets/fonts/Switzer/Switzer-Extralight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-R';
+  src: url('assets/fonts/Lato/Lato-Light.ttf') format('truetype');
+}
+
+:root {
+  background-color: #fff;
+}
+
+html {
+  scroll-behavior: auto;
+  scrollbar-width: thin;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+:root {
+  --scrollbar-color: #333 #121212;
+}
+
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #000;
+}
+
+.whiteA {
+  color: rgba(255, 255, 255, .5);
+}
+
+.blackA {
+  color: rgba(0, 0, 0, .9);
+}
+
+.whiteA:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.blackA:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.slideLight {
+  background-image: linear-gradient(#f1f1f1, #e4e4e4);
+}
+
+.slideDark {
+  background-image: linear-gradient(#0e0e0e, #1b1b1b);
+}
+
+
+.css-j204z7-MuiFormControlLabel-root,
+.css-1kalk3d-MuiSwitch-root {
+  margin-right: 0 !important;
+}
+
+.rotate polygon {
+  transition: transform .3s;
+  transform-origin: center center;
+}
+
+.rotate:hover polygon {
+  transform: rotate(45deg);
+  transform-origin: center center;
+  transition: transform .3s;
+}
+
+.footerTag {
+  border-top: 1px solid rgba(255, 255, 255, .8);
+
+  @media (width > 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.skillsLi {
+  border-bottom: 1.7px solid rgba(255, 255, 255, .2);
+
+  @media (width > 0px) {
+    font-size: 8vw;
+  }
+
+  @media (width > 600px) {
+    font-size: 7vw;
+  }
+
+  @media (width > 800px) {
+    font-size: 6vw;
+  }
+
+  @media (width > 950px) {
+    font-size: 5vw;
+  }
+
+  @media (width > 1150px) {
+    font-size: 4vw;
+  }
+
+  @media (width > 1450px) {
+    font-size: 3.5vw;
+  }
+
+  @media (width > 1700px) {
+    font-size: 3vw;
+  }
+}
