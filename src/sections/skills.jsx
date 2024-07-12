@@ -21,12 +21,12 @@ export default function Footer({ isSwitchChecked }) {
 
     return (
         <>
-            <div className={`h-screen w-full absolute mix-blend-difference flex flex-col ${isSwitchChecked ? 'bg-footBW' : 'bg-footBB'}`}>
+            <div className={`min-h-screen w-full absolute mix-blend-difference flex flex-col ${isSwitchChecked ? 'bg-footBW' : 'bg-footBB'}`}>
 
                 <span className={`flex opacity-[.1] pl-10 top-[10px] font-switzer text-[5vw] py-8 md:text-[8vw] xl:text-[4vw] ${isSwitchChecked ? 'text-whiteS' : 'text-blackS'}`}>Working with</span>
 
-                <div onMouseMove={(e) => { manageMouseMove(e) }} className='containera w-[80%] mx-auto'>
-                    <div ref={plane} className='body'>
+                <div onMouseMove={(e) => { manageMouseMove(e) }} className='h-auto flex w-[70%] mx-auto'>
+                    <div ref={plane} className='flex flex-col'>
                         {skills.map((skill, i) => (
                             <Text3d key={i} primary={skill.toUpperCase()} secondary={skill.toUpperCase()} />
                         ))}
