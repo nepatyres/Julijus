@@ -129,7 +129,7 @@ body {
 }
 
 .textContainer .secondary {
-  transform: rotateX(-90deg) translateY(1.8vw);
+  transform: rotateX(-90deg) translateY(3.4vw);
   transform-origin: bottom center;
   will-change: transform;
 }
