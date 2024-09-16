@@ -7,11 +7,7 @@ import GithubSvg from '../components/svg/github';
 export default function Footer({ isSwitchChecked }) {
 
     const plane = useRef(null);
-
     const maxRotate = 45;
-
-
-
     const manageMouseMove = (e) => {
         const x = e.clientX / window.innerWidth
         const y = e.clientY / window.innerHeight
@@ -25,24 +21,21 @@ export default function Footer({ isSwitchChecked }) {
         <>
             <div className={`min-h-screen w-full absolute mix-blend-difference flex flex-col ${isSwitchChecked ? 'bg-footBW' : 'bg-footBB'}`}>
 
-                <span className={`flex opacity-[.1] pl-10 top-[10px] font-switzer text-[5vw] py-8 md:text-[8vw] xl:text-[4vw] ${isSwitchChecked ? 'text-whiteS' : 'text-blackS'}`}>Working with</span>
+                <span className={`flex opacity-[.1] lg:pl-10 top-[10px] font-switzer text-5xl lg:text-[60px] py-8 md-pl-10 ${isSwitchChecked ? 'text-whiteS' : 'text-blackS'}`}>Working with</span>
 
-                <div onMouseMove={(e) => { manageMouseMove(e) }} className='h-auto flex w-[70%] mx-auto'>
-                    <div ref={plane} className='flex flex-col'>
+                <div onMouseMove={(e) => { manageMouseMove(e) }} className='h-auto flex w-[80%] lg:w-[70%] mx-auto'>
+                    <div ref={plane} className='flex flex-col lg:py-20'>
                         {skills.map((skill, i) => (
                             <Text3d key={i} primary={skill.toUpperCase()} secondary={skill.toUpperCase()} />
                         ))}
                     </div>
                 </div>
 
-                <div className='inset-x-0 bottom-0 w-[90%] mx-auto bg-transparent text-center p-10 pb-0 mix-blend-difference'>
+                <div className='inset-x-0 bottom-0 w-full lg:w-[90%] mx-auto bg-transparent text-center px-5 lg:px-10 pb-0 mt-auto  mix-blend-difference'>
                     <div className='footerTag border-t-white-1 py-2.5 width-full items-center m-0 flex-col '>
                         <span className='justify-start flex font-switzerL text-[15px] ml-[15px] text-dot9'>contactjulijus@gmail.com</span>
                         <span className='text-dot6 font-switzerL text-[15px]'>Designed and developed by <a className='dot9 decoration-none cursor-pointer text-white/75' target='_blank' rel="noreferrer" href='https://julijus.com'>Julijus</a></span>
                         <div className='text-white justify-end flex gap-[5px] mr-[15px]'>
-                            {/* {footer.map((foot, i) => (
-                                <a className='fill-white decoration-none cursor-pointer' target='_blank' rel="noreferrer" href={foot.link}>{foot.svg}</a>
-                            ))} */}
                             <a className='fill-white cursor-pointer decoration-none' href="https://www.linkedin.com/in/nepatyres/" target='_blank' rel="noreferrer">
                                 <LinkedinSvg />
                             </a>

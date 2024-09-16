@@ -15,7 +15,7 @@ export const works = [
                 link: 'https://geoquiz-ila7.onrender.com/'
             }
         ],
-        skills: ['HTML', 'CSS', 'Javascript', 'Nodejs', 'mongodb', 'git', 2023]
+        skills: ['HTML', 'CSS', 'Javascript', 'Nodejs', 'mongodb', 2023]
     },
     {
         number: '02',
@@ -32,6 +32,22 @@ export const works = [
             }
         ],
         skills: ['Next.js', 'Tailwind', 'Typescript', 2023]
+    },
+    {
+        number: '03',
+        name: 'àrtisto',
+        bg: '/images/workThree.jpg',
+        links: [
+            {
+                name: 'Code',
+                link: 'https://github.com/nepatyres/artisto'
+            },
+            {
+                name: 'Website',
+                link: 'https://artisto-beta.vercel.app/'
+            }
+        ],
+        skills: ['Next.js', 'MySql', 'Tailwind', 'Typescript', 2024]
     },
 ];
 
