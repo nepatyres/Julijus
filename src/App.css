@@ -4,47 +4,47 @@
 
 @font-face {
   font-family: 'Jost-Regular';
-  src: url('fonts/Jost/Jost-Regular.ttf') format('truetype');
+  src: url('assets/fonts/Jost/Jost-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Jost-Light';
-  src: url('fonts/Jost/Jost-ExtraLight.ttf') format('truetype');
+  src: url('assets/fonts/Jost/Jost-ExtraLight.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Antonio';
-  src: url('fonts/Antonio-Bold.ttf') format('truetype');
+  src: url('assets/fonts/Antonio-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('fonts/Roboto/Roboto-Light.ttf') format('truetype');
+  src: url('assets/fonts/Roboto/Roboto-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto-M';
-  src: url('fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+  src: url('assets/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer/Switzer-Regular.ttf') format('truetype');
+  src: url('assets/fonts/Switzer/Switzer-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Switzer-L';
-  src: url('fonts/Switzer/Switzer-Extralight.ttf') format('truetype');
+  src: url('assets/fonts/Switzer/Switzer-Extralight.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('fonts/Lato/Lato-Bold.ttf') format('truetype');
+  src: url('assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Lato-R';
-  src: url('fonts/Lato/Lato-Light.ttf') format('truetype');
+  src: url('assets/fonts/Lato/Lato-Light.ttf') format('truetype');
 }
 
 :root {
