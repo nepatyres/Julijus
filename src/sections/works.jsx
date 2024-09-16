@@ -66,7 +66,7 @@ export default function Works({ isSwitchChecked }) {
                                 <div className='w-full flex mx-auto items-center pt-[22rem] md:pt-[25rem] lg:pt-[30rem] xl:pt-[30rem] 2xl:pt-[35rem] justify-between'>
                                     {work.links.map((link, i) => (
                                         <a key={i += 1} href={link.link} target="_blank" className='rotate text-[1rem] md:text-[1.2rem] lg:text-[1.5rem] text-white/90 font-switzerL mix-blend-difference no-underline items-center flex cursor-pointer'>{link.name}
-                                            <Arrow />
+                                            <Arrow  />
                                         </a>
                                     ))}
                                 </div>
