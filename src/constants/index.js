@@ -12,7 +12,7 @@ export const works = [
             },
             {
                 name: 'Website',
-                link: 'https://github.com/nepatyres/GeoQuiz'
+                link: 'https://geo-lilac-one.vercel.app/'
             }
         ],
         skills: ['Angular', 'Java', 'PostgreSQL', 2023]
