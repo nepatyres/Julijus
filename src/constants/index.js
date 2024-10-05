@@ -1,4 +1,4 @@
-export const skills = ['css', 'html', 'nodejs', 'tailwind', 'javascript', 'typescript', 'mongodb', 'react', 'git'];
+export const skills = ['css', 'html', 'MySQL', 'nodejs', 'tailwind', 'javascript', 'PostgreSQL', 'typescript', 'mongodb', 'Angular', 'react', 'java'];
 
 export const works = [
     {
@@ -8,14 +8,14 @@ export const works = [
         links: [
             {
                 name: 'Code',
-                link: 'https://github.com/nepatyres/GeoQuiz'
+                link: 'https://github.com/nepatyres/geo'
             },
             {
                 name: 'Website',
-                link: 'https://geoquiz-ila7.onrender.com/'
+                link: 'https://github.com/nepatyres/GeoQuiz'
             }
         ],
-        skills: ['HTML', 'CSS', 'Javascript', 'Nodejs', 'mongodb', 2023]
+        skills: ['Angular', 'Java', 'PostgreSQL', 2023]
     },
     {
         number: '02',

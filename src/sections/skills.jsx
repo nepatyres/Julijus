@@ -23,7 +23,7 @@ export default function Footer({ isSwitchChecked }) {
 
                 <span className={`flex opacity-[.1] lg:pl-10 top-[10px] font-switzer text-5xl lg:text-[60px] py-8 md-pl-10 ${isSwitchChecked ? 'text-whiteS' : 'text-blackS'}`}>Working with</span>
 
-                <div onMouseMove={(e) => { manageMouseMove(e) }} className='h-auto flex w-[80%] lg:w-[70%] mx-auto'>
+                <div onMouseMove={(e) => { manageMouseMove(e) }} className='h-auto flex w-[80%] lg:w-[70%] mx-auto mb-10'>
                     <div ref={plane} className='flex flex-col lg:py-20'>
                         {skills.map((skill, i) => (
                             <Text3d key={i} primary={skill.toUpperCase()} secondary={skill.toUpperCase()} />
