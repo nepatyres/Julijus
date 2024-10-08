@@ -32,7 +32,7 @@ export default function Footer({ isSwitchChecked }) {
                 </div>
 
                 <div className='inset-x-0 bottom-0 w-full lg:w-[90%] mx-auto bg-transparent text-center px-5 lg:px-10 pb-0 mt-auto  mix-blend-difference'>
-                    <div className='footerTag border-t-white-1 py-2.5 width-full items-center m-0 flex-col '>
+                    <div className='footerTag border-t-white-1 py-2.5 width-full items-center m-0 flex-col'>
                         <span className='justify-start flex font-switzerL text-[15px] ml-[15px] text-dot9'>contactjulijus@gmail.com</span>
                         <span className='text-dot6 font-switzerL text-[15px]'>Designed and developed by <a className='dot9 decoration-none cursor-pointer text-white/75' target='_blank' rel="noreferrer" href='https://julijus.com'>Julijus</a></span>
                         <div className='text-white justify-end flex gap-[5px] mr-[15px]'>

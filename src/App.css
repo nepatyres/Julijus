@@ -103,16 +103,7 @@ body {
   margin-right: 0 !important;
 }
 
-.rotate polygon {
-  transition: transform .3s;
-  transform-origin: center center;
-}
 
-.rotate:hover polygon {
-  transform: rotate(45deg);
-  transform-origin: center center;
-  transition: transform .3s;
-}
 
 .footerTag {
   border-top: 1px solid rgba(255, 255, 255, .8);
