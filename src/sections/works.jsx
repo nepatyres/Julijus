@@ -60,7 +60,7 @@ export default function Works({ isSwitchChecked }) {
                             <span className='absolute left-5 top-2.5 text-[8rem] xl:text-[10rem] font-lato text-white/[.05] mix-blend-difference'>{work.number}</span>
                             <div className="flex flex-col z-10 h-full my-auto w-[90%] mx-auto inset-0 justify-center items-center absolute overflow-hidden mix-blend-difference">
 
-                                <span ref={el => refs.current[i].name = el} className={`flex absolute font-antonio text-white/90 uppercase text-center text-[22vw] xl:text-[23vw] 2xl:[22vw]`}>{work.name}</span>
+                                <span ref={el => refs.current[i].name = el} className={`flex absolute font-antonio text-white/90 uppercase text-center ${i === 0 ? 'text-[15vw] xl:text-[15vw] 2xl:[14vw]' : 'text-[22vw] xl:text-[23vw] 2xl:[22vw]'}`}>{work.name}</span>
 
                                 <div></div>
                                 <div className='w-full flex mx-auto items-center pt-[22rem] md:pt-[25rem] lg:pt-[30rem] xl:pt-[30rem] 2xl:pt-[35rem] justify-between'>

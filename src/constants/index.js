@@ -3,6 +3,38 @@ export const skills = ['css', 'html', 'MySQL', 'nodejs', 'tailwind', 'javascript
 export const works = [
     {
         number: '01',
+        name: 'MarlinMotors',
+        bg: '/images/workFour.png',
+        links: [
+            {
+                name: 'Code',
+                link: 'https://github.com/nepatyres/marlingmotors'
+            },
+            {
+                name: 'Website',
+                link: 'https://marlinmotors.lt/'
+            }
+        ],
+        skills: ['Next.js', 'Tailwind', 'Typescript', 2025]
+    },
+    {
+        number: '02',
+        name: 'àrtisto',
+        bg: '/images/workThree.jpg',
+        links: [
+            {
+                name: 'Code',
+                link: 'https://github.com/nepatyres/artisto'
+            },
+            {
+                name: 'Website',
+                link: 'https://artisto-beta.vercel.app/'
+            }
+        ],
+        skills: ['Next.js', 'MySql', 'Tailwind', 'Typescript', 2024]
+    },
+    {
+        number: '03',
         name: 'GeoQuiz',
         bg: '/images/workOne.png',
         links: [
@@ -18,7 +50,7 @@ export const works = [
         skills: ['Angular', 'Java', 'PostgreSQL', 2023]
     },
     {
-        number: '02',
+        number: '04',
         name: 'carcarelt',
         bg: '/images/workTwo.jpg',
         links: [
@@ -32,23 +64,7 @@ export const works = [
             }
         ],
         skills: ['Next.js', 'Tailwind', 'Typescript', 2023]
-    },
-    {
-        number: '03',
-        name: 'àrtisto',
-        bg: '/images/workThree.jpg',
-        links: [
-            {
-                name: 'Code',
-                link: 'https://github.com/nepatyres/artisto'
-            },
-            {
-                name: 'Website',
-                link: 'https://artisto-beta.vercel.app/'
-            }
-        ],
-        skills: ['Next.js', 'MySql', 'Tailwind', 'Typescript', 2024]
-    },
+    }
 ];
 
 export const footer = [
