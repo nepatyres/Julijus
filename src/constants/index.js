@@ -24,11 +24,11 @@ export const works = [
         links: [
             {
                 name: 'Code',
-                link: 'https://github.com/nepatyres/artisto'
+                link: 'https://github.com/nepatyres/artisto.'
             },
             {
                 name: 'Website',
-                link: 'https://artisto-beta.vercel.app/'
+                link: 'https://artisto-alpha.vercel.app/'
             }
         ],
         skills: ['Next.js', 'MySql', 'Tailwind', 'Typescript', 2024]
